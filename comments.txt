@@ -1,0 +1,16 @@
+#8C1837 - MAGENTA parece merda
+#7A4ED9 - ROXO
+#e7de35 - AMARELO DIARREIA
+#BF2C0B - ABOBORA
+#0D0D0D - preto fosco
+
+WitcherDev  
+
+
+https://owlcarousel2.github.io/OwlCarousel2/
+
+https://animejs.com
+
+https://threejs.org
+
+https://swiperjs.com/get-started

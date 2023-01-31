@@ -1,0 +1,253 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-magenta: #8C1837;
+    --color-roxo: #7A4ED9;
+    --color-amarelo: #e7de35;
+    --color-abobora: #BF2C0B;
+    --color-fosco: #0D0D0D;
+}
+
+@font-face {
+    font-family: origintech;
+    src: url(/assets/fonts/OriginTech\ personal\ use.ttf);
+}
+
+@font-face {
+    font-family: planetkosmos;
+    src: url(/assets/fonts/planetkosmos.TTF);
+}
+
+@font-face {
+    font-family: spaceage;
+    src: url(/assets/fonts/spaceage.ttf);
+}
+
+@font-face {
+    font-family: tourner;
+    src: url(/assets/fonts/Tourner.ttf);
+}
+
+body {
+    background-color: var(--color-fosco);
+}
+
+@media screen and (min-width: 320px) and (max-width:1480px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --color-magenta: #8C1837;
+        --color-roxo: #7A4ED9;
+        --color-amarelo: #e7de35;
+        --color-abobora: #BF2C0B;
+        --color-fosco: #0D0D0D;
+    }
+
+    @font-face {
+        font-family: origintech;
+        src: url(/assets/fonts/OriginTech\ personal\ use.ttf);
+    }
+
+    @font-face {
+        font-family: planetkosmos;
+        src: url(/assets/fonts/planetkosmos.TTF);
+    }
+
+    @font-face {
+        font-family: spaceage;
+        src: url(/assets/fonts/spaceage.ttf);
+    }
+
+    @font-face {
+        font-family: tourner;
+        src: url(/assets/fonts/Tourner.ttf);
+    }
+
+    body {
+        
+        /* background-color: var(--color-fosco); */
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* border: 1px solid white; */
+        width: 100vw;
+        height: 6vh;
+    }
+
+    .icon {
+        display: block;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+
+    .options {
+        position: absolute;
+        right: -110%;
+        top: 50%;
+        transform: translate(0, -50%);
+        background-color: var(--color-magenta);
+        list-style: none;
+        padding: 10px;
+        transition: right 0.85s ease-in-out;
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 35px;
+        background: rgba(122, 78, 217, 1);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgb(184, 177, 177);
+        backdrop-filter: blur(7.4px);
+        -webkit-backdrop-filter: blur(7.4px);
+        border: 1px solid rgba(231, 222, 53, 0.30);
+    }
+
+    .options.active {
+        z-index: ;
+        right: 0;
+    }
+
+    main{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        color: white;
+    }
+
+    main span:first-child{
+        color: var(--color-amarelo);
+    }
+
+    main span{
+        font-weight: bold;
+    }
+
+    .button1 {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #ffffff;
+        font-weight: 900;
+        font-family: tourner;
+        border: 3px solid black;
+        background: none;
+        padding: 10px;
+        width: 75vw;
+        position: relative;
+        overflow: hidden;
+        transition: color 1s;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+        border-color: #ffffff;
+        border-radius: 12px;
+        transition: 0.8s;
+        display: flex;
+        margin: 0 auto;
+        z-index: 9999;
+    }
+    
+    .button1:hover {
+        background-color: #8C1837;
+        box-shadow: 0px 0px 15px #8C1837, 0px 0px 45px #8C1837, 0px 0px 90px #8C1837;
+    }
+    
+    .button1::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background: #8C1837;
+        z-index: -1;
+        transition: 0.8s;
+        top: 0;
+        border-radius: 50% 50% 0 0;
+    }
+    
+    .button1::before {
+        top: 0;
+        border-radius: 0 0 50% 50%;
+    
+    }
+    
+    .button1:hover::before {
+        height: 180%;
+    }
+
+    .button2 {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #ffffff;
+        font-weight: 900;
+        font-family: tourner;
+        border: 3px solid black;
+        background: none;
+        padding: 10px;
+        width: 75vw;
+        position: relative;
+        overflow: hidden;
+        transition: color 1s;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+        border-color: #ffffff;
+        border-radius: 12px;
+        transition: 0.8s;
+        display: flex;
+        margin: 0 auto;
+        z-index: 9999;
+    }
+    
+    .button2:hover {
+        background-color: #8C1837;
+        box-shadow: 0px 0px 15px #8C1837, 0px 0px 45px #8C1837, 0px 0px 90px #8C1837;
+    }
+    
+    .button2::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background: #8C1837;
+        z-index: -1;
+        transition: 0.8s;
+        top: 0;
+        border-radius: 50% 50% 0 0;
+    }
+    
+    .button2::before {
+        top: 0;
+        border-radius: 0 0 50% 50%;
+    
+    }
+    
+    .button2:hover::before {
+        height: 180%;
+    }
+
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
