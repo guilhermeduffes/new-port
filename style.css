@@ -74,7 +74,7 @@ body {
     }
 
     body {
-        
+
         /* background-color: var(--color-fosco); */
     }
 
@@ -82,15 +82,15 @@ body {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        /* border: 1px solid white; */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         width: 100vw;
         height: 6vh;
     }
 
     .icon {
+        margin-right: 1.3rem;
         display: block;
         cursor: pointer;
-        margin-right: 5px;
         z-index: 99999999999999;
     }
 
@@ -103,7 +103,7 @@ body {
         list-style: none;
         padding: 10px;
         transition: right 0.45s ease-in-out;
-        width: 100vw;
+        width: 50vw;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -120,14 +120,14 @@ body {
     }
 
     .options.active {
-        right: -50%;
+        right: 0;
         display: flex;
         transition: right 0.5s ease-in-out;
         z-index: 99999;
     }
-    
 
-    main{
+
+    main {
         display: flex;
         justify-content: start;
         align-items: center;
@@ -137,11 +137,11 @@ body {
         color: white;
     }
 
-    main span:first-child{
+    main span:first-child {
         color: var(--color-amarelo);
     }
 
-    main span{
+    main span {
         font-weight: bold;
     }
 
@@ -168,12 +168,12 @@ body {
         margin: 0 auto;
         z-index: 9999;
     }
-    
+
     .button1:hover {
         background-color: #8C1837;
         box-shadow: 0px 0px 15px #8C1837, 0px 0px 45px #8C1837, 0px 0px 90px #8C1837;
     }
-    
+
     .button1::before {
         content: "";
         position: absolute;
@@ -186,13 +186,13 @@ body {
         top: 0;
         border-radius: 50% 50% 0 0;
     }
-    
+
     .button1::before {
         top: 0;
         border-radius: 0 0 50% 50%;
-    
+
     }
-    
+
     .button1:hover::before {
         height: 180%;
     }
@@ -220,12 +220,12 @@ body {
         margin: 0 auto;
         z-index: 9999;
     }
-    
+
     .button2:hover {
         background-color: #8C1837;
         box-shadow: 0px 0px 15px #8C1837, 0px 0px 45px #8C1837, 0px 0px 90px #8C1837;
     }
-    
+
     .button2::before {
         content: "";
         position: absolute;
@@ -238,18 +238,18 @@ body {
         top: 0;
         border-radius: 50% 50% 0 0;
     }
-    
+
     .button2::before {
         top: 0;
         border-radius: 0 0 50% 50%;
-    
+
     }
-    
+
     .button2:hover::before {
         height: 180%;
     }
 
-    button{
+    button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -261,9 +261,128 @@ body {
         align-items: center;
     }
 
-    .sobre-mim{
-        width: 95vw;
-        height: 25rem;
-        border: 1px solid white;
+    .sobre-mim {
+        margin-top: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        height: 95rem;
+        border-radius: 8px;
+        /* border: 1px solid white; */
+        background-color: #1c1c1d;
+        box-shadow: 0px 0px 15px #ffffff;
+
     }
+
+    .foto-sobre-mim {
+        display: flex;
+        justify-content: center;
+        width: 85vw;
+        height: 50vh;
+        border-radius: 8px;
+        /* border: 1px solid orange; */
+        background-image: url(assets/refs/bruxo-logo.png);
+        background-size: contain;
+        background-position: center center;
+        margin-top: 3rem;
+    }
+
+    .texto-sobre-mim {
+        width: 85vw;
+        /* border: 1px solid blue; */
+        margin-top: 0.5rem;
+    }
+
+    .texto-sobre-mim P:first-child {
+        font-size: 2.5rem;
+    }
+
+    .texto-sobre-mim p {
+        color: white;
+        letter-spacing: 2.5px;
+        line-height: 28px;
+    }
+
+    .sobre-mim button {
+        align-items: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #ffffff;
+        font-weight: 900;
+        font-family: tourner;
+        border: 3px solid black;
+        background: none;
+        padding: 10px;
+        width: 75vw;
+        position: relative;
+        overflow: hidden;
+        transition: color 1s;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+        border-color: #ffffff;
+        border-radius: 12px;
+        transition: 0.8s;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .sobre-mim button:hover {
+        background-color: #8C1837;
+        box-shadow: 0px 0px 15px #8C1837, 0px 0px 45px #8C1837, 0px 0px 90px #8C1837;
+    }
+
+    .sobre-mim button::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background: #8C1837;
+        z-index: -1;
+        transition: 0.8s;
+        top: 0;
+        border-radius: 50% 50% 0 0;
+    }
+
+    .sobre-mim button::before {
+        top: 0;
+        border-radius: 0 0 50% 50%;
+
+    }
+
+    .sobre-mim button:hover::before {
+        height: 180%;
+    }
+
+    .pai-habilidades{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .box-habilidades1,
+    .box-habilidades2,
+    .box-habilidades3 {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80vw;
+        height: 17rem;
+        border-radius: 8px;
+        background-color: #1c1c1d;
+        gap: 25px;
+        color: white;
+        padding: 12px;
+        font-weight: bolder;
+    }
+
+    
+
+
 }

@@ -1,3 +1,5 @@
+
+
 var icon = document.querySelector('.icon');
 var options = document.querySelector('.options');
 

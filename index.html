@@ -2,45 +2,90 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/refs/varinha-logo.png">
-
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/refs/varinha-logo.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <div class="menu">
-            <!-- <img src="/assets/svgs-icons/menu.svg" class="icon"> -->
-            <img src="assets/svgs-icons/menu.svg" class="icon">
-            <ul class="options">
-              <li><a href="#">Opção 1</a></li>
-              <li><a href="#">Opção 2</a></li>
-              <li><a href="#">Opção 3</a></li>
-            </ul>
-          </div>
-        </header>
-<BR></BR><BR>
-        <main>
-          <h1> Sou o <span>Bruxo</span>.</h1>
-          <h1>Web developer </h1>
-          <br>
-          <span>Este é meu Portfólio e Currículo. Aqui você pode ver cada um dos meus projetos e um pouco mais sobre mim. <br> Curta!</span>
-          <br>
-          <button class="button1" >Meus projetos</button> <br>
-          <button class="button2"> <img src="assets/svgs-icons/download.svg" alt=""> &nbsp;	 Baixe meu CV</button>        
-        </main>
+  <header>
+    <div class="menu">
+      <!-- <img src="/assets/svgs-icons/menu.svg" class="icon"> -->
+      <img src="assets/svgs-icons/menu.svg" class="icon">
+      <ul class="options">
+        <li><a href="#">Opção 1</a></li>
+        <li><a href="#">Opção 2</a></li>
+        <li><a href="#">Opção 3</a></li>
+      </ul>
+    </div>
+  </header>
+  <BR></BR><BR>
+  <main>
+    <h1> Sou o <span>Bruxo</span>.</h1>
+  <BR></BR><BR>
+    <h1>Web developer </h1>
+    <br>
+    <span>Este é meu Portfólio e Currículo. Aqui você pode ver cada um dos meus projetos e um pouco mais sobre mim. <br>
+      Curta!</span>
+    <br>
+  <BR></BR>
+    <button data-aos="fade-down" class="button1">Meus projetos</button> <br> <br><br>
+    <button data-aos="fade-up" class="button2"> <img src="assets/svgs-icons/download.svg" alt=""> &nbsp; Baixe meu CV</button>
+  </main>
 
-        <section>
-          <div class="sobre-mim">
-            
-          </div>
-        </section>
+  <section>
+    <div class="sobre-mim">
+      <div class="foto-sobre-mim"></div>
+      <div class="texto-sobre-mim">
+        <p>Sobre mim:</p> <br><br><br>
+        <p>Meu nome é Guilherme Duffes e sou conhecido como o "bruxo da programação". Estou cursando engenharia da
+          computação e tenho uma paixão por tecnologia e desenvolvimento de software. Embora ainda não tenha experiência
+          profissional, possuo habilidades autodidatas e conhecimentos em JavaScript, HTML, CSS, Git e Github. Tenho
+          facilidade em aprender novos sistemas e ferramentas e sempre estou procurando novas oportunidades para crescer
+          e aprender.
 
-    <script src="script.js"></script>
+          Meu objetivo é encontrar uma empresa que valorize meu potencial e me permita contribuir para o seu sucesso.
+          Fora do trabalho, sou apaixonado por estudar, ler, cozinhar e praticar esportes. Atualmente, tenho alguns
+          projetos em andamento e estou animado para compartilhá-los em breve. Se você está procurando por alguém
+          apaixonado por tecnologia, capacitado e sempre pronto para aprender, eu sou a pessoa certa.</p>
+      </div>
+      <br><br>
+      <button data-aos="zoom-out" id="butto-sobre-mim">Mais sobre mim &nbsp;<img src="assets/svgs-icons/arrow-right.svg" alt=""> </button>
+    </div>
+  </section>
+  <br><br><br><br><br>
+  <h2 style="color: white; text-align: center; font-size: 2.5rem;">Minhas habilidades!</h2>
+
+  <section>
+    <div class="pai-habilidades">
+      <div data-aos="fade-right" class="box-habilidades1">
+        <img src="assets/svgs-icons/smartphone.svg" alt="">
+        <span>Design Responsivo</span>
+        <span>Com a minha habilidade em design responsivo, posso criar designs atraentes e funcionais para dispositivos móveis, desktops e tablets. Isso garante que seu site seja acessível e fácil de usar em qualquer plataforma.</span>
+      </div>
+      <div data-aos="fade-left" class="box-habilidades2">
+        <img src="assets/svgs-icons/sliders.svg" alt="">
+        <span>SEO</span>
+        <span>Com conhecimento em SEO, posso otimizar seu site para os motores de busca, garantindo uma boa classificação nos resultados de pesquisa e aumentando a visibilidade do seu negócio na web.</span>
+      </div>
+      <div data-aos="fade-right" class="box-habilidades3">
+        <img src="assets/svgs-icons/user.svg" alt="">
+        <span>Trabalho em equipe</span>
+        <span>Acredito que o trabalho em equipe é fundamental para o sucesso de qualquer projeto. Com minha habilidade de trabalhar em equipe, posso colaborar com outros profissionais para atingir objetivos comuns e garantir a entrega de resultados excepcionais.</span>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
