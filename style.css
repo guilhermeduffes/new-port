@@ -34,6 +34,11 @@
     src: url(/assets/fonts/Tourner.ttf);
 }
 
+@font-face {
+    font-family: dmsans;
+    src: url(/assets/fonts/DMSans-Medium.ttf);
+}
+
 body {
     background-color: var(--color-fosco);
 }
@@ -83,7 +88,7 @@ body {
         justify-content: flex-end;
         align-items: center;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        width: 100vw;
+        width: 94vw;
         height: 6vh;
     }
 
@@ -282,9 +287,10 @@ body {
         height: 50vh;
         border-radius: 8px;
         /* border: 1px solid orange; */
-        background-image: url(assets/refs/bruxo-logo.png);
+        background-image: url(assets/refs/bruxo_Minimalistic_logo_with_a_green_witch_wand_and_elegant_typ_49681ba6-60ed-4908-8523-c1917a85f5e9.png);
         background-size: contain;
         background-position: center center;
+        background-repeat: no-repeat;
         margin-top: 3rem;
     }
 
@@ -295,7 +301,7 @@ body {
     }
 
     .texto-sobre-mim P:first-child {
-        font-size: 2.5rem;
+        font-size: 1.7rem;
     }
 
     .texto-sobre-mim p {
@@ -373,16 +379,15 @@ body {
         flex-direction: column;
         align-items: flex-start;
         width: 80vw;
-        height: 17rem;
+        height: 23rem;
         border-radius: 8px;
         background-color: #1c1c1d;
         gap: 25px;
         color: white;
-        padding: 12px;
+        padding: 20px;
         font-weight: bolder;
     }
 
     
-
 
 }
