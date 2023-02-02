@@ -1,16 +1,8 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-/* 
-body {
-    width: 100vw;
-    height: 100vh;
-} */
 
 :root {
     --color-magenta: #8C1837;
@@ -22,7 +14,7 @@ body {
 
 @font-face {
     font-family: origintech;
-    src: url(/assets/fonts/OriginTech\ personal\ use.ttf);
+    src: url(/assets/fonts/origintech.ttf);
 }
 
 @font-face {
@@ -45,9 +37,20 @@ body {
     src: url(/assets/fonts/DMSans-Medium.ttf);
 }
 
+@font-face {
+    font-family: nasa;
+    src: url(/assets/fonts/nasalization.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--color-fosco);
 }
+
+@media screen and (max-width: 377px) {}
 
 @media screen and (min-width: 320px) and (max-width:480px) {
     * {
@@ -84,14 +87,57 @@ body {
         src: url(/assets/fonts/Tourner.ttf);
     }
 
-    body {
 
-        /* background-color: var(--color-fosco); */
+
+
+    body::-webkit-scrollbar {
+        width: 0.2em;
+        background-color: #F5F5F5;
     }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: var(--color-amarelo);
+        border-radius: 10px;
+    }
+
+
+    .idioma-selecionado {
+        display: inline-block;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .idioma {
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        outline: none;
+        font-size: 16px;
+    }
+
+    .bandeira {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+
+    .idioma option {
+        color: ;
+        background-color: #333;
+        font-family: nasa;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+
+
 
     .menu {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         width: 100%;
@@ -177,12 +223,12 @@ body {
         margin: 0 auto;
         z-index: 9999;
     }
-    
+
     .butao:hover {
         background-color: #8C1837;
         box-shadow: 0px 0px 15px #8C1837, 0px 0px 45px #8C1837, 0px 0px 90px #8C1837;
     }
-    
+
     .butao::before {
         content: "";
         position: absolute;
@@ -195,13 +241,13 @@ body {
         top: 0;
         border-radius: 50% 50% 0 0;
     }
-    
+
     .butao::before {
         top: 0;
         border-radius: 0 0 50% 50%;
-    
+
     }
-    
+
     .butao:hover::before {
         height: 180%;
     }
@@ -315,7 +361,7 @@ body {
         height: 180%;
     }
 
-    .pai-habilidades{
+    .pai-habilidades {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -323,16 +369,14 @@ body {
         width: 100vw;
     }
 
-    .box-habilidades1,
-    .box-habilidades2,
-    .box-habilidades3 {
+    .box-habilidades{
         margin-top: 2rem;
         display: flex;
         justify-content: left;
         flex-direction: column;
         align-items: flex-start;
         width: 80vw;
-        height: 23rem;
+        height: 30rem;
         border-radius: 8px;
         background-color: #1c1c1d;
         gap: 25px;
@@ -340,14 +384,25 @@ body {
         padding: 20px;
         letter-spacing: 2.8px;
         font-weight: bolder;
+        overflow: auto;
+    }
+
+    .box-habilidades::-webkit-scrollbar {
+        width: 0.2em;
+        background-color: #F5F5F5;
+    }
+
+    .box-habilidades::-webkit-scrollbar-thumb {
+        background-color: var(--color-abobora);
+        border-radius: 10px;
     }
 
     .pai-habilidades button {
-        margin-top: 80px;    
+        margin-top: 80px;
     }
-    
 
-    .box-projetos{
+
+    .box-projetos {
         margin-top: 2rem;
         display: flex;
         justify-content: left;
@@ -367,7 +422,7 @@ body {
         background-position: center center;
     }
 
-    .pai-projetos{
+    .pai-projetos {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -376,19 +431,20 @@ body {
     }
 
 
-    .linha-footer{
+    .linha-footer {
         width: 90vw;
         height: 2px;
         background-color: rgba(255, 255, 255, 0.3);
     }
 
-    footer{
+    footer {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         gap: 50px;
         color: white;
+        cursor: pointer;
     }
 
     footer ul {
