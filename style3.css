@@ -1,0 +1,411 @@
+
+@media screen and (min-width:820px) and (max-width:1348px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    :root {
+        --color-magenta: #8C1837;
+        --color-roxo: #7A4ED9;
+        --color-amarelo: #e7de35;
+        --color-abobora: #BF2C0B;
+        --color-fosco: #0D0D0D;
+    }
+    
+    @font-face {
+        font-family: origintech;
+        src: url(/assets/fonts/OriginTech\ personal\ use.ttf);
+    }
+    
+    @font-face {
+        font-family: planetkosmos;
+        src: url(/assets/fonts/planetkosmos.TTF);
+    }
+    
+    @font-face {
+        font-family: spaceage;
+        src: url(/assets/fonts/spaceage.ttf);
+    }
+    
+    @font-face {
+        font-family: tourner;
+        src: url(/assets/fonts/Tourner.ttf);
+    }
+    
+    
+   
+
+    
+    body::-webkit-scrollbar {
+        width: 0.2em;
+        background-color: #F5F5F5;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background-color: var(--color-amarelo);
+        border-radius: 10px;
+    }
+    
+    
+    .idioma-selecionado {
+        display: inline-block;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    
+    .idioma {
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        outline: none;
+        font-size: 16px;
+    }
+    
+    .bandeira {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+    
+    .idioma option {
+        background-color: #333;
+        font-family: nasa;
+        font-size: 15px;
+        padding: 10px;
+    }
+    
+    .menu-texto{
+        display: none;
+    }
+    
+    
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+        height: 6vh;
+    }
+    
+    .icon {
+        margin-right: 1.3rem;
+        display: block;
+        cursor: pointer;
+        z-index: 99999999999999;
+    }
+    
+    .options {
+        right: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        background-color: var(--color-magenta);
+        list-style: none;
+        transition: width 0.5s ease-in-out;
+        width: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 35px;
+        background: var(--color-fosco);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(7.4px);
+        -webkit-backdrop-filter: blur(7.4px);
+        z-index: 99999;
+        overflow-x: hidden;
+    }
+    
+    .options.active {
+        padding: 10px;
+        width: 50vw;
+        transition: width 0.5s ease-in-out;
+        z-index: 99999;
+    }
+    
+    
+    main {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        color: white;
+    }
+    
+    main span:first-child {
+        color: var(--color-amarelo);
+    }
+    
+    main span {
+        font-weight: bold;
+    }
+    
+    .butao {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #BF2C0B;
+        font-weight: 900;
+        font-family: tourner;
+        border: 3px solid black;
+        background: none;
+        padding: 10px;
+        position: relative;
+        overflow: hidden;
+        transition: color 1s;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+        border-color: #79717A;
+        border-radius: 12px;
+        transition: 0.8s;
+        display: flex;
+        margin: 0 auto;
+        z-index: 9999;
+    }
+    
+    .butao:hover {
+        background-color: #8C1837;
+        box-shadow: 0px 0px 15px #8C1837, 0px 0px 45px #8C1837, 0px 0px 90px #8C1837;
+    }
+    
+    .butao::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background: #8C1837;
+        z-index: -1;
+        transition: 0.8s;
+        top: 0;
+        border-radius: 50% 50% 0 0;
+    }
+    
+    .butao::before {
+        top: 0;
+        border-radius: 0 0 50% 50%;
+    
+    }
+    
+    .butao:hover::before {
+        height: 180%;
+    }
+    
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .sobre-mim {
+        margin-top: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        height: 75rem;
+        border-radius: 8px;
+        border: 1px solid white;
+        background-color: #1c1c1d;
+        box-shadow: 0px 0px 15px #ffffff;
+    
+    }
+    
+    .foto-sobre-mim {
+        display: flex;
+        justify-content: center;
+        width: 85vw;
+        height: 50vh;
+        border-radius: 8px;
+        /* border: 1px solid orange; */
+        background-image: url(assets/refs/bruxo_Minimalistic_logo_with_a_green_witch_wand_and_elegant_typ_49681ba6-60ed-4908-8523-c1917a85f5e9.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-top: 3rem;
+    }
+    
+    .texto-sobre-mim {
+        width: 85vw;
+        /* border: 1px solid blue; */
+        margin-top: 0.5rem;
+    }
+    
+    .texto-sobre-mim P:first-child {
+        font-size: 1.7rem;
+    }
+    
+    .texto-sobre-mim p {
+        color: white;
+        letter-spacing: 2.5px;
+        line-height: 28px;
+    }
+    
+    .sobre-mim button {
+        align-items: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #ffffff;
+        font-weight: 900;
+        font-family: tourner;
+        border: 3px solid black;
+        background: none;
+        padding: 10px;
+        width: 75vw;
+        position: relative;
+        overflow: hidden;
+        transition: color 1s;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+        border-color: #ffffff;
+        border-radius: 12px;
+        transition: 0.8s;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    
+    .sobre-mim button:hover {
+        background-color: #8C1837;
+        box-shadow: 0px 0px 15px #8C1837, 0px 0px 45px #8C1837, 0px 0px 90px #8C1837;
+    }
+    
+    .sobre-mim button::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background: #8C1837;
+        z-index: -1;
+        transition: 0.8s;
+        top: 0;
+        border-radius: 50% 50% 0 0;
+    }
+    
+    .sobre-mim button::before {
+        top: 0;
+        border-radius: 0 0 50% 50%;
+    
+    }
+    
+    .sobre-mim button:hover::before {
+        height: 180%;
+    }
+    
+    .pai-habilidades {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100vw;
+    }
+    
+    .box-habilidades{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80vw;
+        height: 15rem;
+        border-radius: 8px;
+        background-color: #1c1c1d;
+        gap: 25px;
+        color: white;
+        padding: 20px;
+        letter-spacing: 2.8px;
+        font-weight: bolder;
+        overflow: auto;
+    }
+    
+    .box-habilidades::-webkit-scrollbar {
+        width: 0.2em;
+        background-color: #F5F5F5;
+    }
+    
+    .box-habilidades::-webkit-scrollbar-thumb {
+        background-color: var(--color-abobora);
+        border-radius: 10px;
+    }
+    
+    .pai-habilidades button {
+        margin-top: 80px;
+    }
+    
+    
+    .box-projetos {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80vw;
+        height: 12rem;
+        border-radius: 8px;
+        background-color: #1c1c1d;
+        gap: 25px;
+        color: white;
+        padding: 20px;
+        font-weight: bolder;
+        background-image: url(assets/imgs/back-principal.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    .pai-projetos {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+    
+    
+    .linha-footer {
+        width: 90vw;
+        height: 2px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    footer ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        color: white;
+        list-style: none;
+    }
+}
+
+
