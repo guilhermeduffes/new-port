@@ -59,7 +59,7 @@
   </main>
 
   <section>
-    <div class="sobre-mim">
+    <div id="sobre-mim2" class="sobre-mim">
       <div class="foto-sobre-mim"></div>
       <div class="texto-sobre-mim">
         <p>About Me:</p> <br><br><br>
@@ -112,12 +112,12 @@
     
     <br><br><br><br><br>
 
-    <h2 style="font-family: origintech; color: white; text-align: center; font-size: 2.5rem;">Projects</h2>
+    <h2 id="projetos" style="font-family: origintech; color: white; text-align: center; font-size: 2.5rem;">Projects</h2>
     <section>
       <div class="pai-projetos">
-        <div class="box-projetos"></div>
-        <div class="box-projetos"></div>
-        <div class="box-projetos"></div>
+        <div data-aos="fade-up" class="box-projetos"></div>
+        <div data-aos="fade-down" class="box-projetos"></div>
+        <div data-aos="fade-up" class="box-projetos"></div>
         <br><br><br><br>
         </div>
     </section>
@@ -129,15 +129,15 @@
 
     <footer>
       
-      <h3 id="home1" style="font-family: origintech; font-size: 2.5rem;" >Bruxo</h3>
+      <h3 onclick="scrollParaTopo()" id="home1" style="font-family: origintech; font-size: 2.5rem;" >Bruxo</h3>
       <ul>
         <li onclick="scrollParaTopo()" id="home2" style="color: #47D16E; font-size: 1.7rem; font-family: nasa; letter-spacing: 4px; font-weight: bolder;" >Home</li>
         <li onclick="scrollAboutMe()" id="sobre-mim2" style="font-family: dmsans; font-weight: 600;"  >About me</li>
-        <li id="projetos" style="font-family: dmsans; font-weight: 600;" >Projects</li>
+        <li onclick="scrollParaProjetos()" id="projetos" style="font-family: dmsans; font-weight: 600;" >Projects</li>
         <li id="contato" style="color: #47D16E; font-size: 1.7rem; font-family: nasa; letter-spacing: 4px; font-weight: bolder;" >Contact</li>
-        <li id="insta" style="font-family: dmsans; font-weight: 600;" >Instagram</li>
-        <li id="whatsapp" style="font-family: dmsans; font-weight: 600;" >Whatsapp</li>
-        <li id="linkedin" style="font-family: dmsans; font-weight: 600;" >Linkedin</li>
+        <li onclick="scrollParaInsta()" id="insta" style="font-family: dmsans; font-weight: 600;" >Instagram</li>
+        <li onclick="scrollParaWhatsapp()" id="whatsapp" style="font-family: dmsans; font-weight: 600;" >Whatsapp</li>
+        <li onclick="scrollParaLinkedin()" id="linkedin" style="font-family: dmsans; font-weight: 600;" >Linkedin</li>
       </ul>
     </footer>
 
@@ -150,7 +150,7 @@
     <br><br>
 
 
-  <script src="script.js"></script>
+  <script src="main.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

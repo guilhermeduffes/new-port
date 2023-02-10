@@ -173,6 +173,25 @@ body {
         overflow-x: hidden;
     }
 
+    .options button a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .options button{
+        border-radius: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .options button:hover{
+        background-color: var(--color-abobora);
+        transition: 0.7s;
+        cursor: pointer;
+    }
+
     .options.active {
         padding: 10px;
         width: 50vw;
@@ -196,7 +215,8 @@ body {
     }
 
     main span {
-        font-weight: bold;
+        font-family: dmsans;
+        font-weight: 600;
     }
 
     .butao {

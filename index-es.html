@@ -61,7 +61,7 @@
   </main>
 
   <section>
-    <div class="sobre-mim">
+    <div id="sobre-mim2" class="sobre-mim">
       <div class="foto-sobre-mim"></div>
       <div class="texto-sobre-mim">
         <p>Acerca de mí:</p> <br><br><br>
@@ -84,21 +84,21 @@
 
   <section>
     <div class="pai-habilidades">
-      <div data-aos="zoom-in-down" class="box-habilidades1">
+      <div data-aos="zoom-in-down" class="box-habilidades">
         <img src="assets/svgs-icons/smartphone.svg" alt="">
         <span style="font-family: tourner; letter-spacing: 3px;">Diseño Sensible</span>
         <span style="font-family: dmsans; text-align: justify;">Con mi experiencia en diseño responsivo, puedo crear
           diseños atractivos y funcionales para dispositivos móviles, escritorio y tabletas. Esto asegura que su sitio
           web sea accesible y fácil de usar en cualquier plataforma.</span>
       </div>
-      <div data-aos="zoom-in" class="box-habilidades2">
+      <div data-aos="zoom-in" class="box-habilidades">
         <img src="assets/svgs-icons/chrome.svg" alt="">
         <span style="font-family: tourner; letter-spacing: 3px;">SEO</span>
         <span style="font-family: dmsans; text-align: justify; ">Con conocimiento en SEO, puedo optimizar su sitio web
           para los motores de búsqueda, asegurando un buen ranking en los resultados de búsqueda y aumentando la
           visibilidad de su negocio en la web.</span>
       </div>
-      <div data-aos="zoom-in-up" class="box-habilidades3">
+      <div data-aos="zoom-in-up" class="box-habilidades">
         <img src="assets/svgs-icons/user.svg" alt="">
         <span style="font-family: tourner; letter-spacing: 3px;">Trabajo en Equipo</span>
         <span style="font-family: dmsans; text-align: justify;">Creo que el trabajo en equipo es esencial para el éxito
@@ -140,12 +140,12 @@
 
     <br><br><br><br><br>
 
-    <h2 style="font-family: origintech; color: white; text-align: center; font-size: 2.5rem;">Proyectos</h2>
+    <h2 id="projetos" style="font-family: origintech; color: white; text-align: center; font-size: 2.5rem;">Proyectos</h2>
     <section>
       <div class="pai-projetos">
-        <div class="box-projetos"></div>
-        <div class="box-projetos"></div>
-        <div class="box-projetos"></div>
+        <div data-aos="fade-up" class="box-projetos"></div>
+        <div data-aos="fade-down" class="box-projetos"></div>
+        <div data-aos="fade-up" class="box-projetos"></div>
         <br><br><br><br>
          <br> <br><br>
       </div>
@@ -164,13 +164,13 @@
           style="color: #47D16E; font-size: 1.7rem; font-family: nasa; letter-spacing: 4px; font-weight: bolder;">Casa
         </li>
         <li id="sobre-mim" style="font-family: dmsans; font-weight: 600;">Acerca de mí</li>
-        <li id="projetos" style="font-family: dmsans; font-weight: 600;">Proyectos</li>
+        <li onclick="scrollParaProjetos()" id="projetos" style="font-family: dmsans; font-weight: 600;">Proyectos</li>
         <li id="contato"
           style="color: #47D16E; font-size: 1.7rem; font-family: nasa; letter-spacing: 4px; font-weight: bolder;">
           Contacto</li>
-        <li id="insta" style="font-family: dmsans; font-weight: 600;">Instagram</li>
-        <li id="whatsapp" style="font-family: dmsans; font-weight: 600;">Whatsapp</li>
-        <li id="linkedin" style="font-family: dmsans; font-weight: 600;">Linkedin</li>
+        <li onclick="scrollParaInsta()" id="insta" style="font-family: dmsans; font-weight: 600;">Instagram</li>
+        <li onclick="scrollParaWhatsapp()" id="whatsapp" style="font-family: dmsans; font-weight: 600;">Whatsapp</li>
+        <li onclick="scrollParaLinkedin()" id="linkedin" style="font-family: dmsans; font-weight: 600;">Linkedin</li>
       </ul>
     </footer>
 
@@ -183,7 +183,7 @@
     <br><br>
 
 
-    <script src="script.js"></script>
+    <script src="main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
