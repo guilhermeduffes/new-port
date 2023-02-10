@@ -12,10 +12,7 @@
     --color-fosco: #0D0D0D;
 }
 
-@font-face {
-    font-family: origintech;
-    src: url(/assets/fonts/origintech.ttf);
-}
+
 
 @font-face {
     font-family: planetkosmos;

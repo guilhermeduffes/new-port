@@ -29,23 +29,6 @@ idiomaSelecionado.addEventListener("change", function() {
 });
 
 
-function indexPt(){
-  console.log('oi')
-}
-
-function indexEs(){
-  
-}
-
-function indexEn(){
-}
-
-
-
-
-
-
-
 function buttonProjetos(){
   window.location.assign("#projetos");
 }
@@ -67,21 +50,9 @@ document.getElementById("home1").addEventListener('click',function()  {
   window.location.assign("index.html");
 }); 
 
-document.getElementById("home2").addEventListener('click',function()  {
-  window.location.assign("index.html");
-}); 
-
-document.getElementById("sobre-mim").addEventListener('click',function()  {
-  window.open("sobremim.html");
-}); 
-
-document.getElementById("projetos").addEventListener('click',function()  {
-  window.open("projetos.html");
-}); 
-
-document.getElementById("contato").addEventListener('click',function()  {
-  window.open("contato.html");
-}); 
+// document.getElementById("sobre-mim").addEventListener('click',function()  {
+//   window.open("sobremim.html");
+// }); 
 
 document.getElementById("insta").addEventListener('click',function()  {
   window.open("https://www.instagram.com/bx_crip");
@@ -94,5 +65,20 @@ document.getElementById("whatsapp").addEventListener('click',function()  {
 document.getElementById("linkedin").addEventListener('click',function()  {
   window.open("https://wa.me/+5521971235386");
 });
+
+function scrollParaTopo(){
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+function scrollAboutMe(){
+  var element = document.getElementById('sobre-mim2');
+  element.scrollIntoView({ 
+    behavior: 'smooth' 
+  });
+}
+
 
 
