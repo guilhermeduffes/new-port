@@ -1,10 +1,13 @@
+function buttonCV(){
+  window.open("assets/CV.pdf","_blank");
+}
+
 var icon = document.querySelector('.icon');
 var options = document.querySelector('.options');
 
 icon.addEventListener('click', function() {
   options.classList.toggle('active');
 });
-
 
 var idiomaSelecionado = document.querySelector(".idioma");
 var bandeira = document.querySelector(".bandeira");
@@ -27,12 +30,6 @@ idiomaSelecionado.addEventListener("change", function() {
       break;
   }
 });
-
-
-
-
-
-
 
 function scrollParaTopo(){
   window.scrollTo({
