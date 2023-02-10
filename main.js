@@ -64,7 +64,7 @@ document.getElementById("whatsapp").addEventListener('click',function()  {
 });
 
 document.getElementById("linkedin").addEventListener('click',function()  {
-  window.open("https://wa.me/+5521971235386");
+  window.open("");
 });
 
 
