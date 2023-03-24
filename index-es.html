@@ -33,10 +33,9 @@
       </div>
 
       <ul class="menu-texto" >
-        <li> <a href="">Casa</a>  </li>
-        <li><a href="">Acerca de mí:</a> </li>
-        <li><a href="">Habilidades</a> </li>
-        <li><a href="">Proyectos</a> </li>
+        <li><a onclick="scrollAboutMe()" href="">Acerca de mí:</a> </li>
+        <li><a onclick="scrollForHabilities()" href="">Habilidades</a> </li>
+        <li><a onclick="scrollForProjects()" href="">Proyectos</a> </li>
       </ul>
 
       <img src="assets/svgs-icons/menu.svg" class="icon">
@@ -142,16 +141,108 @@
 
     <br><br><br><br><br>
 
-    <h2 id="projetos" style="font-family: origintech; color: white; text-align: center; font-size: 2.5rem;">Proyectos</h2>
-    <section>
-      <div class="pai-projetos">
-        <div data-aos="fade-up" class="box-projetos"></div>
-        <div data-aos="fade-down" class="box-projetos"></div>
-        <div data-aos="fade-up" class="box-projetos"></div>
-        <br><br><br><br>
-         <br> <br><br>
+    <h2 id="projetos" style="font-family: origintech; color: white; text-align: center; font-size: 2.5rem;">Mejores Proyectos</h2>
+    
+
+    <div id="cards">
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img  src="assets/svgs-icons/database.svg" alt="">
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <img  src="assets/svgs-icons/database2.svg" alt="">
+              <div class="card-info-title">
+                <h3>CRUD</h3>
+                <h4>CRUD hecho con Html, CSS, JavaScript Vanilla</h4>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img src="assets/svgs-icons/image.svg" alt="">
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <img src="assets/svgs-icons/image2.svg" alt="">
+              <div class="card-info-title">
+                <h3>Generador de Imágenes</h3>
+                <h4>Generador de imágenes según género hecho con Html, CSS, JavaScript Vanilla</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img src="assets/svgs-icons/lock.svg" alt="">
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <img src="assets/svgs-icons/lock2.svg" alt="">
+              <div class="card-info-title">
+                <h3>Generador de contraseñas</h3>
+                <h4>Generador de contraseñas con historial, cookies y fecha hecho con Html, CSS, JavaScript Vanilla</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img src="assets/svgs-icons/Spinner-1s-177px.svg" alt="">
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <img src="assets/svgs-icons/Spinner-1s-177px2.svg" alt="">
+              <div class="card-info-title">
+                <h3>Pronto . . .</h3>
+                <h4>-</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img src="assets/svgs-icons/Spinner-1s-177px.svg" alt="">
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <img src="assets/svgs-icons/Spinner-1s-177px2.svg" alt="">
+              <div class="card-info-title">
+                <h3>Pronto . . .</h3>
+                <h4>-</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img src="assets/svgs-icons/Spinner-1s-177px.svg" alt="">
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <img src="assets/svgs-icons/Spinner-1s-177px2.svg" alt="">
+              <div class="card-info-title">
+                <h3>Pronto . . .</h3>
+                <h4>-</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -160,19 +251,19 @@
 
     <footer>
 
-      <h3 id="home1" style="font-family: origintech; font-size: 2.5rem;">Bruxo</h3>
+      <h3 onclick="scrollForHome()" id="home1" style="font-family: origintech; font-size: 2.5rem;">Bruxo</h3>
       <ul>
-        <li id="home2"
+        <li onclick="scrollForHome()" id="home2"
           style="color: #47D16E; font-size: 1.7rem; font-family: nasa; letter-spacing: 4px; font-weight: bolder;">Casa
         </li>
-        <li id="sobre-mim" style="font-family: dmsans; font-weight: 600;">Acerca de mí</li>
-        <li onclick="scrollParaProjetos()" id="projetos" style="font-family: dmsans; font-weight: 600;">Proyectos</li>
+        <li onclick="scrollAboutMe()" id="sobre-mim" style="font-family: dmsans; font-weight: 600;">Acerca de mí</li>
+        <li onclick="scrollForProjects()" id="projetos" style="font-family: dmsans; font-weight: 600;">Proyectos</li>
         <li id="contato"
           style="color: #47D16E; font-size: 1.7rem; font-family: nasa; letter-spacing: 4px; font-weight: bolder;">
           Contacto</li>
-        <li onclick="scrollParaInsta()" id="insta" style="font-family: dmsans; font-weight: 600;">Instagram</li>
-        <li onclick="scrollParaWhatsapp()" id="whatsapp" style="font-family: dmsans; font-weight: 600;">Whatsapp</li>
-        <li onclick="scrollParaLinkedin()" id="linkedin" style="font-family: dmsans; font-weight: 600;">Linkedin</li>
+        <li onclick="linkForInsta()" id="insta" style="font-family: dmsans; font-weight: 600;">Instagram</li>
+        <li onclick="linkForWhatsapp()" id="whatsapp" style="font-family: dmsans; font-weight: 600;">Whatsapp</li>
+        <li onclick="linkforLinkedin()" id="linkedin" style="font-family: dmsans; font-weight: 600;">Linkedin</li>
       </ul>
     </footer>
 

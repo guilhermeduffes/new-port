@@ -9,10 +9,8 @@
   <link rel="stylesheet" href="style2.css">
   <link rel="stylesheet" href="style3.css">
   <link rel="stylesheet" href="style4.css">
-  <link rel="shortcut icon" href="assets/refs/varinha-logo.png">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="shortcut icon" href="assets/refs/varinha-logo.png">
   <title>Meu Portifólio</title>
 </head>
 
@@ -30,19 +28,18 @@
         <img src="pt.png" class="bandeira">
       </div>
       <ul class="menu-texto">
-        <li> <a id="home-link" href="">Home</a> </li>
-        <li><a id="sobre-mim-link" href="">Sobre mim</a> </li>
-        <li><a id="hab-links" href="">Habilidades</a> </li>
-        <li><a id="projetos-link" href="">Projetos</a> </li>
+        <li><a onclick="scrollAboutMe()" id="sobre-mim-link" href="">Sobre mim</a> </li>
+        <li><a onclick="scrollForHabilities()" id="hab-links" href="">Habilidades</a> </li>
+        <li><a onclick="scrollForProjects()" id="projetos-link" href="">Projetos</a> </li>
       </ul>
 
 
       <img src="assets/svgs-icons/menu.svg" class="icon">
       <ul class="options">
-        <button><a href="#">Home</a></button>
-        <button><a href="">Sobre mim </a></button>
-        <button><a href="#">Habilidades </a></button>
-        <button><a href="#">Projetos </a></button>
+        <button><a onclick="" href="#">Home</a></button>
+        <button><a onclick="" href="">Sobre mim </a></button>
+        <button><a onclick="" href="#">Habilidades </a></button>
+        <button><a onclick="" href="#">Projetos </a></button>
 
       </ul>
     </div>
@@ -57,7 +54,7 @@
       Curta!</span>
     <br>
     <BR></BR>
-    <button onclick="scrollParaProjetos()" data-aos="fade-down" class="butao">Meus projetos</button> <br> <br><br>
+    <button onclick="scrollForProjects()" data-aos="fade-down" class="butao">Meus projetos</button> <br> <br><br>
     <button onclick="buttonCV()" data-aos="fade-up" class="butao"> <img src="assets/svgs-icons/download.svg" alt="">
       &nbsp; Baixe meu
       CV</button>
@@ -145,16 +142,108 @@
 
     <br><br><br><br><br>
 
-    <h2 id="projetos" style="font-family: origintech; color: white; text-align: center; font-size: 2.5rem;">Projetos
+    <h2 id="projetos" style="font-family: origintech; color: white; text-align: center; font-size: 2.5rem;">Melhores Projetos
     </h2>
-    <section>
-      <div class="variable-width">
-        <div> <img src="assets/imgs/fonz3.png" alt=""> </div>
-        <div> <img src="assets/imgs/fonz2.png" alt=""> </div>
-        <div> <img src="assets/imgs/fonz1.png" alt=""> </div>
-        <br><br><br><br>
+
+    <div id="cards">
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img  src="assets/svgs-icons/database.svg" alt="">
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <img  src="assets/svgs-icons/database2.svg" alt="">
+              <div class="card-info-title">
+                <h3>CRUD</h3>
+                <h4>CRUD feito com Html, Css, JavaScript Vanilla</h4>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img src="assets/svgs-icons/image.svg" alt="">
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <img src="assets/svgs-icons/image2.svg" alt="">
+              <div class="card-info-title">
+                <h3>Gerador De Imagens</h3>
+                <h4>Gerador de imagens de acordo com o sexo feito com Html, Css, JavaScript Vanilla</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img src="assets/svgs-icons/lock.svg" alt="">
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <img src="assets/svgs-icons/lock2.svg" alt="">
+              <div class="card-info-title">
+                <h3>Gerador De Senhas</h3>
+                <h4>Gerador de senha com histórico, cookies e data feito com Html, Css, JavaScript Vanilla</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img src="assets/svgs-icons/Spinner-1s-177px.svg" alt="">
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <img src="assets/svgs-icons/Spinner-1s-177px2.svg" alt="">
+              <div class="card-info-title">
+                <h3>Em Breve . . .</h3>
+                <h4>-</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img src="assets/svgs-icons/Spinner-1s-177px.svg" alt="">
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <img src="assets/svgs-icons/Spinner-1s-177px2.svg" alt="">
+              <div class="card-info-title">
+                <h3>Em Breve . . .</h3>
+                <h4>-</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img src="assets/svgs-icons/Spinner-1s-177px.svg" alt="">
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <img src="assets/svgs-icons/Spinner-1s-177px2.svg" alt="">
+              <div class="card-info-title">
+                <h3>Em Breve . . .</h3>
+                <h4>-</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -162,20 +251,19 @@
     <br><br><br>
 
     <footer>
-
-      <h3 onclick="scrollParaTopo()" id="home1" style="font-family: origintech; font-size: 2.5rem;">Bruxo</h3>
+      <h3 onclick="scrollForHome()" id="home1" style="font-family: origintech; font-size: 2.5rem;">Bruxo</h3>
       <ul>
-        <li onclick="scrollParaTopo()" id="home2"
+        <li onclick="scrollForHome()" id="home2"
           style="color: #47D16E; font-size: 1.7rem; font-family: nasa; letter-spacing: 4px; font-weight: bolder;">Home
         </li>
         <li onclick="scrollAboutMe()" style="font-family: dmsans; font-weight: 600;">Sobre mim</li>
-        <li onclick="scrollParaProjetos()" id="projetos" style="font-family: dmsans; font-weight: 600;">Projetos</li>
+        <li onclick="scrollForProjects()" id="projetos" style="font-family: dmsans; font-weight: 600;">Projetos</li>
         <li id="contato"
-          style="color: #47D16E; font-size: 1.7rem; font-family: nasa; letter-spacing: 4px; font-weight: bolder;">
+          style=" cursor: auto; color: #47D16E; font-size: 1.7rem; font-family: nasa; letter-spacing: 4px; font-weight: bolder;">
           Contato</li>
-        <li onclick="scrollParaInsta()" id="insta" style="font-family: dmsans; font-weight: 600;">Instagram</li>
-        <li onclick="scrollParaWhatsapp()" id="whatsapp" style="font-family: dmsans; font-weight: 600;">Whatsapp</li>
-        <li onclick="scrollParaLinkedin()" id="linkedin" style="font-family: dmsans; font-weight: 600;">Linkedin</li>
+        <li onclick="linkForInsta()" id="insta" style="font-family: dmsans; font-weight: 600;">Instagram</li>
+        <li onclick="linkForWhatsapp()" id="whatsapp" style="font-family: dmsans; font-weight: 600;">Whatsapp</li>
+        <li onclick="linkforLinkedin()" id="linkedin" style="font-family: dmsans; font-weight: 600;">Linkedin</li>
       </ul>
     </footer>
 
@@ -190,22 +278,14 @@
 
     <script src="main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
     <script>
       AOS.init();
     </script>
 
-    <script type="text/javascript">
-      $('.variable-width').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-      });
+    <script>
+
     </script>
+
 </body>
 
 </html>
